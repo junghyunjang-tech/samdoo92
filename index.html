@@ -12,19 +12,27 @@
             border-radius: 50%;
             margin: 0 auto;
         }
+        .logo {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+        }
     </style>
 </head>
 <body class="bg-blue-100 flex items-center justify-center h-screen">
-    <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-lg">
-        <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar mb-4">
-        <div>
-            <input id="search" type="text" class="w-full p-2 border rounded mb-2" placeholder="Type your search...">
-            <button id="submit" class="w-full bg-blue-700 text-white p-2 rounded">Search</button>
-        </div>
-        <div id="response" class="mt-4 p-4 border rounded bg-gray-100">
-            <!-- GPT response will appear here -->
-        </div>
+<div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-lg">
+    <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar mb-4">
+    <div>
+        <input id="search" type="text" class="w-full p-2 border rounded mb-2" placeholder="Type your search...">
+        <button id="submit" class="w-full bg-blue-700 text-white p-2 rounded">Search</button>
     </div>
-    <script src="script.js"></script>
+    <div id="response" class="mt-4 p-4 border rounded bg-gray-100">
+        <!-- GPT response will appear here -->
+    </div>
+</div>
+<img src="/assets/images/samdugui_logo_transparent.png" alt="Logo" class="logo">
+<script src="script.js"></script>
 </body>
 </html>
